@@ -41,7 +41,7 @@ def main():
 
         # Application author details:
         author="OvierIP",
-        author_email="ovier.izquierdop@udea.edu.co",
+        author_email="ovierizquierdop@iejuanxxiiimedellin.edu.co",
 
         # Packages
         packages=find_packages(exclude=['tests']),
@@ -63,7 +63,17 @@ def main():
 
         # Dependent packages (distributions)
         # See: https://github.com/pypa/pipenv/issues/2171
-        # install_requires=[],
+        # install_requires=[
+            'numpy==1.16.5; python_version=="3.7"',
+            'numpy>=1.16.5; python_version=="3.8"',
+            'numpy>=1.16.5; python_version=="3.9"',
+            'anomalies>=0.2.5; python_version=="3.7"',
+            'anomalies>=0.2.5; python_version=="3.8"',
+            'anomalies>=0.2.5; python_version=="3.9"',
+            'pandas>=0.20.3; python_version=="3.7"',
+            'pandas>=0.20.3; python_version=="3.8"',
+            'pandas>=0.20.3; python_version=="3.9"'
+        ],
     )
 
 
