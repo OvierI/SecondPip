@@ -24,6 +24,7 @@ def iniciar():
         type=int,
         default=1,
         required=False,
+        action='store',
         help='valores positivos que l o k puede tomar'
     )
      
@@ -31,8 +32,9 @@ def iniciar():
         '-imax',
         type=int,
         default=0, 
-        required=False, 
-        help='máximo de iteraciones para encontrar las soluciones'
+        required=False,
+        action='store',
+        help='máximo de iteraciones para encontrar las soluciones y cuidar RAM'
     )
    
     parser.add_argument(
@@ -40,6 +42,7 @@ def iniciar():
         type=int,
         default=30,
         required=True,
+        action='store',
         help='valor máximo que z puede tomar'
     )
 
@@ -48,23 +51,23 @@ def iniciar():
         type= int,
         default=500000,
         required=False,
+        action='store',
         help='espacio de parámetros para hallar soluciones'
     )
     
     
-    parser.add_argument('-w', '--output_name',type=str,default="solution",required=False,action='store',help='entero para que es la dimension de z ')
-    
-    
+    parser.add_argument('Solucion',type=str,default="solucion",required=False,action='store',help='almacene los resultados del dataframe')
+        
     args = parser.parse_args()
     sys.stdout.write(str(solutionfinal(args)))
     return args
 
 def main(args): 
   
-  if args.number:
+  if args.n:
       
       s=solutionfinal(args.n,args.m,args.imax,args.zmax,args.N)
-      s.to_json(args.output_name+'.json',orient='records')
+      s.to_csv('args.solucion.csv',index='False')
         
   return  print(s) 
  
