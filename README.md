@@ -12,7 +12,7 @@ $ pip install -i https://test.pypi.org/simple/ SecondPip
 ```
 ## Implementación
 ```bash
-Second.Pip.solutionfinal(5,9,0,30,500000);
+SecondPip.solutionfinal(5,9,0,30,500000);
 donde  se considera n=5, m=9, imax=0, zmax=30 y N=500000
 ```
 
