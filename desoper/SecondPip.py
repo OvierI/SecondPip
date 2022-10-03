@@ -13,7 +13,7 @@ import time
 import warnings
 warnings.filterwarnings("ignore")
 global zmax
-#zmax=30
+zmax=30
 
 z=anomaly.free
 
