@@ -25,5 +25,4 @@ donde  se considera n=5, m=9, imax=0, zmax=30 y N=500000
 
 ```
 
-## Autor
-[OvierI](https://github.com/OvierI)
+
