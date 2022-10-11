@@ -98,7 +98,7 @@ def get_solution_from_list(lk,zmax=zmax):
 from multiprocessing import Pool
 from multiprocessing import cpu_count
 
-def solucion_total(n, M, Nmax, zmax, imax):
+def solucionfinal(n, M, Nmax, zmax, imax):
     Z_sol = (vector_like(n, M, Nmax))
     print(f'El arreglo vectorlike es:{Z_sol}')
     
