@@ -2,8 +2,6 @@ import unittest
 import pandas as pd
 from desoper.SecondPip import solutionfinal 
 
-#test base
-
 
 class Test_hello(unittest.TestCase):
     def test__working1(self):
